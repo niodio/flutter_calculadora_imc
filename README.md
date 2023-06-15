@@ -1,6 +1,12 @@
 # calculadora_imc
 
-A new Flutter project.
+Simples calculadora de IMC feita em Flutter.
+
+## Imagens
+
+<!-- pegar do assets -->
+<img src="assets/images/tela1.png" width="200" height="400" />
+<img src="assets/images/tela2.png" width="200" height="400" />
 
 ## Getting Started
 
