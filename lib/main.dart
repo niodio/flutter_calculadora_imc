@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Home(),
     ),
   );
@@ -31,6 +31,30 @@ class _HomeState extends State<Home> {
         ],
       ),
       backgroundColor: Colors.white,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Icon(Icons.person_outline, size: 120.0, color: Colors.green),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+              labelText: 'Peso (kg)',
+              labelStyle: TextStyle(color: Colors.green),
+            ),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.green, fontSize: 25.0),
+          ),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+              labelText: 'Altura (cm)',
+              labelStyle: TextStyle(color: Colors.green),
+            ),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.green, fontSize: 25.0),
+          ),
+        ],
+      ),
     );
   }
 }
